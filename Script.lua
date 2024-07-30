@@ -1,6 +1,6 @@
 assert(Drawing, 'exploit not supported')
 
-if not syn and not PROTOSMASHER_LOADED then print'Unnamed ESP only officially supports Synapse and Protosmasher! If you\'re an exploit developer and have added drawing API to your exploit, try setting syn as true then checking if that works, otherwise, DM me on discord @ cppbook.org#1968 or add an issue to the Unnamed ESP Github Repository and I\'ll see it through email!' end
+if not syn and not PROTOSMASHER_LOADED then print'Angelic ESP only officially supports Synapse and Protosmasher! If you\'re an exploit developer and have added drawing API to your exploit, try setting syn as true then checking if that works, otherwise, DM me on discord @ cppbook.org#1968 or add an issue to the Unnamed ESP Github Repository and I\'ll see it through email!' end
 
 if not cloneref then cloneref = function(o) return o end end
 
@@ -50,7 +50,7 @@ local QUAD_SUPPORTED_EXPLOIT = pcall(function() Drawing.new('Quad'):Remove() end
 
 shared.MenuDrawingData = shared.MenuDrawingData or { Instances = {} }
 shared.InstanceData = shared.InstanceData or {}
-shared.RSName = shared.RSName or ('UnnamedESP_by_ic3-' .. HttpService:GenerateGUID(false))
+shared.RSName = shared.RSName or ('Angelic Esp By antirawr.-' .. HttpService:GenerateGUID(false))
 
 local GetDataName = shared.RSName .. '-GetData'
 local UpdateName = shared.RSName .. '-Update'
@@ -1596,7 +1596,7 @@ function CreateMenu(NewPosition) -- Create Menu
 	Menu:AddMenuInstance('TopBarText', 'Text', {
 		Size 		= 25;
 		Position	= shared.MenuDrawingData.Instances.TopBarTwo.Position + V2New(25, 10);
-		Text		= 'Unnamed ESP';
+		Text		= 'Angelic ESP';
 		Color		= Colors.Secondary.Light;
 		Visible		= true;
 		Transparency= 1; -- proto outline fix
